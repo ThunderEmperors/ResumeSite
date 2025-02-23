@@ -1,0 +1,18 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+  <h1 id="resume-title">Create a new Resume</h1>
+
+  <form action="" method="POST">
+    {% csrf_token %}
+    <table>
+      {{ form1.as_table }}
+      {{ form2.as_table }}
+      {{ form3.as_table }}
+      {{ form4.as_table }}
+    </table>
+    <input id="res-submit" type="submit" value="SUBMIT">
+  </form>
+
+{% endblock %}
